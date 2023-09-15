@@ -7,8 +7,9 @@
 /*----- BASE -----*/
 @import 
     'base/typography',
-    'base/base.scss',
-    'base/reset.scss';
+    'base/base',
+    'base/reset';
 
 /*----- LAYOUT -----*/
-@import 'layout/navigation.scss';
+@import 'layout/navigation',
+        'layout/footer';

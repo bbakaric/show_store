@@ -1,5 +1,6 @@
 .navigation-wrapper {
     @include flex-row;
+    justify-content: space-between;
     padding: .9375rem 1.5625rem;
     background: $almost-white;
 
@@ -40,16 +41,17 @@
 
     &__logo {
         display: block;
-        max-width: 80px;
+        max-width: 5rem;
     }
 
     &__links {
         @include flex-row;
+        justify-content: center;
         gap: 3.125rem;
     }
 
     &__cart-logo {
-        max-width: 25px;
+        max-width: 1.5625rem;
     }
 
     &__cart-count {

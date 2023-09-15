@@ -1,0 +1,67 @@
+.footer-wrapper {
+    @include flex-column;
+    padding: 0.9375rem 1.5625rem;
+    background: $almost-white;
+
+    &__box {
+        @include flex-row;
+
+        &--margin {
+            margin-right: auto;
+        }
+
+        &--padding-top {
+            padding-top: .4688rem;
+        }
+
+        &--padding-bottom {
+            padding-bottom: .4688rem;
+        }
+
+        &--align {
+            justify-content: center;
+            gap: .3125rem;
+        }
+
+        &--gap {
+            gap: 5rem;
+        }
+    }
+
+    &__logo {
+        max-width: 7.5rem;
+    }
+
+    &__footer-heading {
+        font-family: $base-font-family;
+        font-size: 1.25rem;
+        padding-bottom: .625rem;
+        color: $blue-main;
+    }
+
+    &__footer-text {
+        font-family: $base-font-family;
+        font-size: 1rem;
+        color: $blue-main;
+
+        &--padding {
+            padding: .3125rem 0;
+        }
+    }
+
+    &__mail {
+        font-family: $base-font-family;
+        font-size: .875rem;
+        font-weight: 600;
+        color: $blue-main;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__copyright {
+        font-family: $base-font-family;
+        font-size: .875rem;
+    }
+}
