@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.scss'
+import './styles/style.scss'
 import Home from "./views/Home"
 import Navigation from './components/Navigation'
 import AllProducts from './views/AllProducts'
@@ -9,6 +10,7 @@ import Jewelery from './views/Jewelery'
 import Electronics from './views/Electronics'
 import Cart from './views/Cart'
 import Login from './views/Login'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -25,6 +27,7 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/login" element={<Login />} />
     </Routes>
+    <Footer />
     </>
   )
 }

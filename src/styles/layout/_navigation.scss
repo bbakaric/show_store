@@ -1,0 +1,62 @@
+.navigation-wrapper {
+    @include flex-row;
+    padding: .9375rem 1.5625rem;
+    background: $almost-white;
+
+    &__link {
+        color: $blue-main;
+        font-family: $base-font-family;
+        font-size: 1.25rem;
+        text-shadow: 1px -1px 2px rgba(123, 126, 132, 0.7);
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &--hover {
+            @keyframes puls {
+                0% {
+                    transform: scale(1, 1);
+                }
+                50% {
+                    transform: scale(1.1, 1.1);
+                }
+                100% {
+                    transform: scale(1, 1);
+                }
+              }
+
+            animation: puls infinite 6s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &--align {
+            @include flex-row;
+        }
+    }
+
+    &__logo {
+        display: block;
+        max-width: 80px;
+    }
+
+    &__links {
+        @include flex-row;
+        gap: 3.125rem;
+    }
+
+    &__cart-logo {
+        max-width: 25px;
+    }
+
+    &__cart-count {
+        font-family: $base-font-family;
+        font-size: .875rem;
+        color: #233565;
+        padding: 0 .5rem .5rem .5rem;
+        margin-top: -0.9375rem;
+    }
+}

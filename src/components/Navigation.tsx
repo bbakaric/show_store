@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 const Navigation = () => {
   return (
     <nav className='navigation-wrapper'>
-        <Link to='/' className='navigation-wrapper__link'>
-            <img src='public\logo.png' alt='logo' className='navigation-wrapper__logo' />
+        <Link to='/' className='navigation-wrapper__link navigation-wrapper__link--hover'>
+            <img src='/logo.png' alt='logo' className='navigation-wrapper__logo' />
         </Link>
         <div className='navigation-wrapper__links'>
             <Link to='/allproducts' className='navigation-wrapper__link'>
@@ -24,11 +24,12 @@ const Navigation = () => {
             </Link>
         </div>
         <div className="navigation-wrapper__links">
-            <Link to='/cart' className='navigation-wrapper__link'>
-                <img src="public\cart.png" alt="cart" className="navigation-wrapper__cart-logo" />
-            </Link>
             <Link to='/login' className='navigation-wrapper__link'>
                 Login
+            </Link>
+            <Link to='/cart' className='navigation-wrapper__link navigation-wrapper__link--align'>
+                <img src="/cart.png" alt="cart" className="navigation-wrapper__cart-logo" />
+                <p className="navigation-wrapper__cart-count">1</p>
             </Link>
         </div>
     </nav>
