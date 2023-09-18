@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -5,7 +7,9 @@ const Footer = () => {
   return (
     <div className="footer-wrapper">
       <div className="footer-wrapper__box footer-wrapper__box--margin footer-wrapper__box--padding-bottom footer-wrapper__box--gap">
-        <img src="/logo.png" alt="logo" className="footer-wrapper__logo" />
+        <Link to="/" className="footer-wrapper__link">
+          <img src="/logo.png" alt="logo" className="footer-wrapper__logo" />
+        </Link>
         <div className="footer-wrapper__content footer-wrapper__content--gap">
           <h3 className="footer-wrapper__footer-heading">
             Contact
