@@ -3,7 +3,15 @@ import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit'
 
 type Product = {
   id: number,
-  title: string
+  title: string,
+  price: number,
+  description: string,
+  category: string,
+  image: string,
+  rating: {
+    rate: number,
+    count: number
+  }
 }
 
 type InitialState = {
