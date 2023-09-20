@@ -13,7 +13,7 @@ export const AllProducts = () => {
   }, [dispatch])
   
   return (
-    <div className="products-wrapper">,
+    <div className="products-wrapper">
       <h1 className="products-wrapper__heading">
         All Products
       </h1>

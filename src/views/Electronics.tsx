@@ -12,7 +12,7 @@ export const Electronics = () => {
   }, [dispatch])
   
   return (
-    <div className="products-wrapper">,
+    <div className="products-wrapper">
       <h1 className="products-wrapper__heading">
         Electronics
       </h1>
