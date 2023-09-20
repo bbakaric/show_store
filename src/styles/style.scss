@@ -10,6 +10,14 @@
     'base/base',
     'base/reset';
 
+/*----- COMPONENTS -----*/
+@import
+    'components/buttons';
+
 /*----- LAYOUT -----*/
 @import 'layout/navigation',
-        'layout/footer';
+        'layout/footer',
+        'layout/productCard';
+
+/*----- PAGES -----*/
+@import 'pages/productsList';

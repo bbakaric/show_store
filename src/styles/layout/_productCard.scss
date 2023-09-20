@@ -1,0 +1,40 @@
+.products-wrapper__product-link {
+    @include flex-column;
+    gap: .625rem;
+    max-width: fit-content;
+}
+
+.product-card {
+    @include flex-column;
+    gap: .625rem;
+    max-width: 12.5rem;
+    padding: .9375rem;
+    border-radius: 2%;
+    box-shadow: #64646f33 0rem .4375rem 1.8125rem 0rem;
+    transition: scale 500ms;
+
+    &:hover {
+        scale: 1.05;
+    }
+
+    &__product-img {
+        width: 12.5rem;
+        height: 12.5rem;
+        object-fit: contain;
+    }
+
+    &__product-name {
+        font-family: $base-font-family;
+        font-size: 1rem;
+        font-weight: 600;
+        align-self: flex-start;
+    }
+
+    &__product-price {
+        font-family: $base-font-family;
+        font-size: .875rem;
+        font-weight: 400;
+        align-self: flex-start;
+    }
+
+}
