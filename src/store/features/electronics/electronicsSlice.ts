@@ -7,7 +7,7 @@ type Product = {
   price: number,
   description: string,
   category: string,
-  imageURL: string,
+  image: string,
   rating: {
     rate: number,
     count: number
