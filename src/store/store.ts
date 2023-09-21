@@ -4,7 +4,7 @@ import electronicsReducer from './features/electronics/electronicsSlice';
 import jeweleryReducer from './features/jewelery/jewelerySlice';
 import mensClothesReducer from './features/menProducts/menProductsSlice';
 import womensClothesReducer from './features/womenProducts/womenProductsSlice';
-import counterReducer from './features/addToCart/addToCartSlice';
+import addToCartReducer from './features/addToCart/addToCartSlice';
 
 
 export const store = configureStore({
@@ -14,7 +14,7 @@ export const store = configureStore({
         jewelery: jeweleryReducer,
         mensClothes: mensClothesReducer,
         womensClothes: womensClothesReducer,
-        addToCart: counterReducer,
+        addToCart: addToCartReducer,
     }
 })
 

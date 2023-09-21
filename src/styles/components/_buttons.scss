@@ -1,15 +1,24 @@
 .add-to-cart-btn  {
     font-family: $base-font-family;
     font-size: .875rem;
-    background: $green-btn;
     color: $true-white;
     border: none;
     border-radius: .3125rem;
     padding: .3125rem;
     margin-top: auto;
 
-    &:hover {
-        cursor: pointer;
+    &__active {
+        background: $green-btn;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+
+    &__inactive {
+        background: $almost-white;
         opacity: 0.8;
+        cursor: default;
     }
 }
