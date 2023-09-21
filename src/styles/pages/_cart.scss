@@ -1,0 +1,18 @@
+.cart-wrapper {
+    @include flex-column;
+    align-items: flex-start;
+    gap: 1.5625rem;
+    padding: 0.9375rem 1.5625rem;
+
+    &__heading {
+        font-family: $base-font-family;
+        font-size: $heading-font-size;
+        font-weight: $heading-font-weight;
+    }
+
+    &__items-box {
+        @include flex-column;
+        align-items: flex-start;
+        width: 100%;
+    }
+}

@@ -13,7 +13,6 @@ export interface DataProp {
 }
 
 const AddToCartButton = ({data}: DataProp) => {
-  //const items = useAppSelector(state => state.addToCart);
   const dispatch = useAppDispatch();
   
   const addToCart = () => {

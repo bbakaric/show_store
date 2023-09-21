@@ -12,7 +12,8 @@
 
 /*----- COMPONENTS -----*/
 @import
-    'components/buttons';
+    'components/buttons',
+    'components/cartItem';
 
 /*----- LAYOUT -----*/
 @import 'layout/navigation',
@@ -20,4 +21,5 @@
         'layout/productCard';
 
 /*----- PAGES -----*/
-@import 'pages/productsList';
+@import 'pages/productsList',
+        'pages/cart';
