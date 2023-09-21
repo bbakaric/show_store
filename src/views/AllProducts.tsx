@@ -1,9 +1,7 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { useAppSelector, useAppDispatch } from '../hooks/hooks'
 import { fetchAllProducts } from '../store/features/allProducts/allProductsSlice'
-
-import AddToCartButton from '../components/AddToCartButton'
+import ProductCard from '../components/ProductCard'
 
 export const AllProducts = () => {
   const product = useAppSelector(state => state.product);
@@ -18,22 +16,7 @@ export const AllProducts = () => {
         All Products
       </h1>
       <div className="products-wrapper__products-cards-wrapper">
-        {product.products.map(item => (
-          <div key={item.id} className="product-card">
-            <Link to={`/product/${item.id}`} className='products-wrapper__product-link'>
-              <div className="product-card__img-wrapper">
-                <img src={item.image} alt="product" className="product-card__product-img" />
-              </div>
-              <h3 className="product-card__product-name">
-                {item.title}
-              </h3>
-              <h4 className="product-card__product-price">
-                {item.price} €
-              </h4>
-            </Link>
-            <AddToCartButton />
-          </div>
-        ))}
+        <ProductCard products={product.products}/>
       </div>
     </div>
   )

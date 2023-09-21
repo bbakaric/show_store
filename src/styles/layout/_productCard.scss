@@ -11,9 +11,8 @@
     padding: .9375rem;
     border-radius: 2%;
     box-shadow: #64646f33 0rem .4375rem 1.8125rem 0rem;
-    transition: scale 500ms;
 
-    &:hover {
+    &:hover &__product-img{
         scale: 1.05;
     }
 
@@ -21,6 +20,7 @@
         width: 12.5rem;
         height: 12.5rem;
         object-fit: contain;
+        transition: scale 500ms;
     }
 
     &__product-name {
