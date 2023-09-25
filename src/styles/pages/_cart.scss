@@ -10,9 +10,18 @@
         font-weight: $heading-font-weight;
     }
 
-    &__items-box {
-        @include flex-column;
-        align-items: flex-start;
-        width: 100%;
+    &__sum-heading {
+        font-family: $base-font-family;
+        font-size: 1.25rem;
+        font-weight: 600;
+        align-self: flex-end;
+        margin-right: 3.125rem;
+    }
+
+    &__sum {
+        font-family: $base-font-family;
+        font-size: 1.125rem;
+        font-weight: 600;
+        align-self: flex-end;
     }
 }

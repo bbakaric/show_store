@@ -7,14 +7,12 @@ const Cart = () => {
       <h1 className="cart-wrapper__heading">
         Cart
       </h1>
-      <div className="cart-wrapper__items-box">
-        <CartItem />
-      </div>
+      <CartItem />
       <h3 className="cart-wrapper__sum-heading">
         Total Price:
       </h3>
       <p className="cart-wrapper__sum">
-        suma
+        suma €
       </p>
       <CheckoutButton />
     </div>
