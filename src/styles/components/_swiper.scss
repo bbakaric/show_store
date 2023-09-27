@@ -1,0 +1,43 @@
+.swiper-item {
+    display: flex !important;
+    gap: 1.5625rem;
+
+    &__product-img {
+        display: block;
+        object-fit: contain;
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+
+    &__info-wrapper {
+        @include flex-column;
+        align-items: flex-start;
+        gap: 1.5625rem;
+    }
+
+    &__product-name {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    &__product-description {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 50rem;
+    }
+
+    &__product-link {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1.125rem;
+        background: $almost-white;
+        padding: .625rem 1.5625rem;
+        border-radius: .3125rem;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

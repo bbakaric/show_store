@@ -11,7 +11,7 @@ type Product = {
 }
 
 export interface ProductsProp {
-    products: Product[]
+    products: Product[],
   }
 
 const ProductCard = ({products}: ProductsProp) => {

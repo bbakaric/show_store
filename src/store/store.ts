@@ -5,6 +5,8 @@ import jeweleryReducer from './features/jewelery/jewelerySlice';
 import mensClothesReducer from './features/menProducts/menProductsSlice';
 import womensClothesReducer from './features/womenProducts/womenProductsSlice';
 import addToCartReducer from './features/addToCart/addToCartSlice';
+import sliderReducer from './features/slider/sliderSlice';
+
 
 
 export const store = configureStore({
@@ -15,6 +17,7 @@ export const store = configureStore({
         mensClothes: mensClothesReducer,
         womensClothes: womensClothesReducer,
         addToCart: addToCartReducer,
+        limitedProduct: sliderReducer,
     }
 })
 

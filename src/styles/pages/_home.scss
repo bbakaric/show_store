@@ -1,0 +1,60 @@
+.home-wrapper {
+
+    &__banner-img {
+        display: block;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    &__sub-heading {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1.125rem;
+        margin-bottom: .9375rem;
+        padding: 1.5625rem;
+    }
+
+    &__popular-wrapper {
+        @include flex-column;
+        gap: 1.5625rem;
+        padding: 1.5625rem;
+    }
+
+    &__popular-heading {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1.125rem;
+        align-self: flex-start;
+    }
+
+    &__categories-box {
+        @include flex-row;
+        gap: 5rem;
+    }
+
+    &__category-link {
+        
+        &:hover .home-wrapper__category{
+            scale: 1.05;
+        }
+    }
+
+    &__category {
+        @include flex-column;
+        gap: .625rem;
+        transition: scale 500ms;
+    }
+
+    &__category-name {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    &__category-img {
+        display: block;
+        object-fit: fill;
+        width: 6.25rem;
+        height: 9.375rem;
+    }
+}

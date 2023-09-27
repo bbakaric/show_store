@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductCard'
 export const AllProducts = () => {
   const product = useAppSelector(state => state.product);
   const dispatch = useAppDispatch();
+  
   useEffect(() => {
     dispatch(fetchAllProducts())
   }, [dispatch])

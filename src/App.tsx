@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.scss'
 import './styles/style.scss'
-import Home from "./views/Home"
+import HomePage from "./views/HomePage"
 import Navigation from './components/Navigation'
 import AllProducts from './views/AllProducts'
 import Womens from './views/Womens'
@@ -18,7 +18,7 @@ function App() {
     <>
     <Navigation />
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="/allproducts" element={<AllProducts />} />
       <Route path="/womens" element={<Womens />} />
       <Route path="/mens" element={<Mens />} />
