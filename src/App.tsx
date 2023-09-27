@@ -10,6 +10,7 @@ import Jewelery from './views/Jewelery'
 import Electronics from './views/Electronics'
 import Cart from './views/Cart'
 import Login from './views/Login'
+import ProductPage from './views/ProductPage'
 import Footer from './components/Footer'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path="/electronics" element={<Electronics />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/product/:id" element={<ProductPage />} />
     </Routes>
     <Footer />
     </>

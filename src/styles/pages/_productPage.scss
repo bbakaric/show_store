@@ -1,0 +1,79 @@
+.pdp-wrapper {
+    @include flex-column;
+    align-items: flex-start;
+    padding: 0.9375rem 1.5625rem;
+    gap: 3.125rem;
+
+    &__top-content {
+        @include flex-row;
+        gap: 3.125rem;
+        align-items: flex-start;
+    }
+
+    &__product-img {
+        display: block;
+        max-width: 15.625rem;
+        max-height: 25rem;
+    }
+
+    &__info-box {
+        @include flex-column;
+        align-items: flex-start;
+    }
+
+    &__product-title {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    &__product-rating {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: .875rem;
+        padding: .625rem 0;
+    }
+
+    &__product-category {
+        display: block;
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    &__category-link {
+        padding-left: .3125rem;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+
+    &__product-price {
+        display: block;
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1rem;
+        padding-top: .3125rem;
+        margin-bottom: 1.5625rem;
+    }
+
+    &__bottom-content {
+         @include flex-column;
+         align-items: flex-start;
+         gap: .9375rem;
+    }
+
+    &__sub-heading {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    &__product-description {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}

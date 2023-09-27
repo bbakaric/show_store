@@ -6,7 +6,7 @@ import mensClothesReducer from './features/menProducts/menProductsSlice';
 import womensClothesReducer from './features/womenProducts/womenProductsSlice';
 import addToCartReducer from './features/addToCart/addToCartSlice';
 import sliderReducer from './features/slider/sliderSlice';
-
+import singleProductReducer from './features/singleProduct/singleProductSlice';
 
 
 export const store = configureStore({
@@ -18,6 +18,7 @@ export const store = configureStore({
         womensClothes: womensClothesReducer,
         addToCart: addToCartReducer,
         limitedProduct: sliderReducer,
+        singleProduct: singleProductReducer,
     }
 })
 
