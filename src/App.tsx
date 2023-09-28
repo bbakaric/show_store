@@ -16,7 +16,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <>
+    <div className="test">
     <Navigation />
     <Routes>
       <Route path="/" element={<HomePage />} />
@@ -30,7 +30,7 @@ function App() {
       <Route path="/product/:id" element={<ProductPage />} />
     </Routes>
     <Footer />
-    </>
+    </div>
   )
 }
 

@@ -14,7 +14,8 @@
 @import
     'components/buttons',
     'components/cartItem',
-    'components/swiper';
+    'components/swiper',
+    'components/loginForm';
 
 /*----- LAYOUT -----*/
 @import 'layout/navigation',
@@ -25,4 +26,5 @@
 @import 'pages/productsList',
         'pages/cart',
         'pages/home',
-        'pages/productPage';
+        'pages/productPage',
+        'pages/login';

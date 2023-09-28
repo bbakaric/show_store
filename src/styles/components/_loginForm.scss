@@ -1,0 +1,35 @@
+.login-wrapper {
+    &__form {
+        @include flex-column;
+        align-items: flex-start;
+        gap: .3125rem;
+    }
+    
+    &__label {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1.125rem;
+    }
+    
+    &__username {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: .3125rem .9375rem;
+        border: .0625rem solid $true-black;
+        border-radius: .3125rem;
+
+        &--error {
+            font-family: $base-font-family;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: .3125rem .9375rem;
+            border: .0625rem solid red;
+            border-radius: .3125rem;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

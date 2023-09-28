@@ -22,3 +22,18 @@
         cursor: default;
     }
 }
+
+.submit-btn {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .3125rem .9375rem;
+    border: none;
+    border-radius: .3125rem;
+    background: $almost-white;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
