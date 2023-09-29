@@ -4,6 +4,7 @@ import QuantityInput from './QuantityInput';
 
 const CartItem = () => {
     const items = useAppSelector(state => state.addToCart);
+    
     return (
         <>
         {items.items.map(item => (
@@ -18,14 +19,14 @@ const CartItem = () => {
                 {item.category}
             </p>
             <p className="cart-item__price">
-                {item.price} €
+                {item.price.toFixed(2)} €
             </p>
             <DeleteFromCart itemId = {item.id}/>
             <div className="cart-item__item-total">
-                <p className="cart-item__product-price">
-                    {item.price} €
+                <p key={item.id} className="cart-item__product-price">
+                    {item.price * item.cartQuantity} €
                 </p>
-                <QuantityInput />
+                <QuantityInput data = {item}/>
             </div>
           </div>
         ))}

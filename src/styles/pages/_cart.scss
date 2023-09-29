@@ -10,6 +10,12 @@
         font-weight: $heading-font-weight;
     }
 
+    &__message {
+        font-family: $base-font-family;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
     &__sum-heading {
         font-family: $base-font-family;
         font-size: 1.25rem;

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from '../hooks/hooks'
-import { addItem } from "../store/features/cartLogic/cartSlice"
+import { addItem, totalSumAdd } from "../store/features/cartLogic/cartSlice"
 
 export interface DataProp {
   data: {
@@ -40,6 +40,7 @@ const AddToCartButton = ({data}: DataProp) => {
   
   const addToCart = () => {
     dispatch(addItem(itemInfo));
+    dispatch(totalSumAdd(data.price))
   }
 
   const change = (id: number) => {
