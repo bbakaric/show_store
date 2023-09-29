@@ -7,7 +7,7 @@ type Product = {
     image: string,
     price: number,
     description: string,
-    category: string
+    category: string,
 }
 
 export interface ProductsProp {

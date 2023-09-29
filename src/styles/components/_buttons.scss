@@ -20,6 +20,91 @@
         background: $almost-white;
         opacity: 0.8;
         cursor: default;
+        pointer-events: none;
+    }
+}
+
+.delete-from-cart-btn {
+    font-family: $base-font-family;
+    font-size: .875rem;
+    color: $true-white;
+    background: $red-btn;
+    border: none;
+    border-radius: .3125rem;
+    padding: .3125rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.checkout-btn {
+    font-family: $base-font-family;
+    font-size: 1.25rem;
+    color: $true-white;
+    background: $blue-tertiary;
+    border: none;
+    border-radius: .3125rem;
+    padding: .9375rem;
+    width: fit-content;
+    align-self: flex-end;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.quantity-input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3125rem;
+    font-family: $base-font-family;
+    font-size: .875rem;
+    font-weight: 600;
+    color: $true-white;
+    background: none;
+    border: none;
+    opacity: 1;
+    cursor: pointer;
+
+    &__inactive {
+        opacity: 0.5;
+
+        &:hover {
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+}
+
+.quantity-decrease {
+    background: $red-btn;
+    border-radius: .3125rem 0 0 .3125rem;
+}
+
+.quantity-increase {
+    background: $green-btn;
+    border-radius: 0 .3125rem .3125rem 0;
+}
+
+.submit-btn {
+    font-family: $base-font-family;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .3125rem .9375rem;
+    border: none;
+    border-radius: .3125rem;
+    background: $almost-white;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
     }
 }
 
