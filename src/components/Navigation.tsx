@@ -3,8 +3,9 @@ import { useAppSelector } from '../hooks/hooks'
 
 const Navigation = () => {
     const quantityIndicator = useAppSelector(state => state.addToCart.quantityIndicator);
+
     return (
-        <nav className='navigation-wrapper'>
+        <nav className='navigation-wrapper' id="nav">
             <Link to='/' className='navigation-wrapper__link navigation-wrapper__link--hover'>
                 <img src='/logo.png' alt='logo' className='navigation-wrapper__logo' />
             </Link>

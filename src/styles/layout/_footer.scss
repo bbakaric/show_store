@@ -2,6 +2,7 @@
     @include flex-column;
     padding: 0.9375rem 1.5625rem;
     background: $almost-white;
+    margin-top: auto;
 
     &__box {
         @include flex-row;

@@ -19,7 +19,8 @@
     'components/quantity';
 
 /*----- LAYOUT -----*/
-@import 'layout/navigation',
+@import 'layout/app',
+        'layout/navigation',
         'layout/footer',
         'layout/productCard';
 
