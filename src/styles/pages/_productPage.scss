@@ -4,9 +4,8 @@
     gap: 3.125rem;
 
     &__top-content {
-        @include flex-row;
+        @include flex-row-topY-leftX;
         gap: 3.125rem;
-        align-items: flex-start;
     }
 
     &__product-img {

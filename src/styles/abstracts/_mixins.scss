@@ -1,4 +1,4 @@
-@mixin flex-row {
+/*@mixin flex-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}*/
 /*----- FLEX DIRECTION ROW -----*/
 @mixin flex-row-topY-leftX {
     display: flex;
