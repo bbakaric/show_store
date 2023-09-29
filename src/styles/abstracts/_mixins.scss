@@ -9,3 +9,85 @@
     flex-direction: column;
     align-items: center;
 }
+/*----- FLEX DIRECTION ROW -----*/
+@mixin flex-row-topY-leftX {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex-row-topY-centerX {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flex-row-topY-rightX {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+@mixin flex-row-centerY-leftX {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-row-centerY-centerX {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-centerY-rightX {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flex-row-bottomY-leftX {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+@mixin flex-row-bottomY-centerX {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@mixin flex-row-bottomY-rightX {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*----- FLEX DIRECTION COLUMN -----*/
+
+@mixin flex-column-topY{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin flex-column-centerY {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-column-bottomY {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

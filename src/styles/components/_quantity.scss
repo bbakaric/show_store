@@ -1,5 +1,5 @@
 .quantity-input {
-    @include flex-row;
+    @include flex-row-centerY-centerX;
 
     &__input {
         background: $almost-white;

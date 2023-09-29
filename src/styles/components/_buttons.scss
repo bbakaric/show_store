@@ -60,9 +60,7 @@
 }
 
 .quantity-input-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-row-centerY-centerX;
     padding: .3125rem;
     font-family: $base-font-family;
     font-size: .875rem;

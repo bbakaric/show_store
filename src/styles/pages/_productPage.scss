@@ -1,6 +1,5 @@
 .pdp-wrapper {
-    @include flex-column;
-    align-items: flex-start;
+    @include flex-column-topY;
     padding: 0.9375rem 1.5625rem;
     gap: 3.125rem;
 
@@ -17,8 +16,7 @@
     }
 
     &__info-box {
-        @include flex-column;
-        align-items: flex-start;
+        @include flex-column-topY;
     }
 
     &__product-title {
@@ -59,8 +57,7 @@
     }
 
     &__bottom-content {
-         @include flex-column;
-         align-items: flex-start;
+         @include flex-column-topY;
          gap: .9375rem;
     }
 

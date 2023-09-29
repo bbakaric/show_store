@@ -1,6 +1,5 @@
 .login-wrapper {
-    @include flex-column;
-    align-items: flex-start;
+    @include flex-column-topY;
     gap: .9375rem;
     padding: 0.9375rem 1.5625rem;
 

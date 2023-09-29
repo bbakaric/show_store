@@ -1,7 +1,6 @@
 .login-wrapper {
     &__form {
-        @include flex-column;
-        align-items: flex-start;
+        @include flex-column-topY;
         gap: .3125rem;
     }
     

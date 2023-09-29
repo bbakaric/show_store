@@ -1,5 +1,4 @@
 .home-wrapper {
-
     &__banner-img {
         display: block;
         object-fit: contain;
@@ -15,7 +14,7 @@
     }
 
     &__popular-wrapper {
-        @include flex-column;
+        @include flex-column-centerY;
         gap: 1.5625rem;
         padding: 1.5625rem;
     }
@@ -28,7 +27,7 @@
     }
 
     &__categories-box {
-        @include flex-row;
+        @include flex-row-centerY-centerX;
         gap: 5rem;
     }
 
@@ -40,7 +39,7 @@
     }
 
     &__category {
-        @include flex-column;
+        @include flex-column-centerY;
         gap: .625rem;
         transition: scale 500ms;
     }

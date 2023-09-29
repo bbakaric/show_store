@@ -10,8 +10,7 @@
     }
 
     &__info-wrapper {
-        @include flex-column;
-        align-items: flex-start;
+        @include flex-column-topY;
         gap: 1.5625rem;
     }
 

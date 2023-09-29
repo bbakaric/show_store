@@ -31,6 +31,7 @@ export const cartSlice = createSlice({
     addItem: (state, action: PayloadAction<Product>) => {
       state.items.push(action.payload);
       state.quantityIndicator ++;
+      state.checkoutMessage = false;
     },
     removeItem: (state, action) => { 
       state.items = state.items.filter((item) => item.id !== action.payload);

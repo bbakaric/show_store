@@ -1,5 +1,5 @@
 .navigation-wrapper {
-    @include flex-row;
+    display: flex;
     justify-content: space-between;
     padding: .9375rem 1.5625rem;
     background: $almost-white;
@@ -45,8 +45,7 @@
     }
 
     &__links {
-        @include flex-row;
-        justify-content: center;
+        @include flex-row-centerY-centerX;
         gap: 3.125rem;
     }
 

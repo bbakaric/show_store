@@ -1,6 +1,5 @@
 .products-wrapper {
-    @include flex-column;
-    align-items: flex-start;
+    @include flex-column-topY;
     gap: 1.5625rem;
     padding: 0.9375rem 1.5625rem;
 
@@ -12,7 +11,7 @@
     }
 
     &__products-cards-wrapper {
-        @include flex-row;
+        display: flex;
         justify-content: space-between;
         align-items: stretch;
         flex-wrap: wrap;

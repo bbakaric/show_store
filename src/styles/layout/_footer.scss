@@ -1,11 +1,11 @@
 .footer-wrapper {
-    @include flex-column;
+    @include flex-column-centerY;
     padding: 0.9375rem 1.5625rem;
     background: $almost-white;
     margin-top: auto;
 
     &__box {
-        @include flex-row;
+        @include flex-row-centerY-centerX;
 
         &--margin {
             margin-right: auto;
