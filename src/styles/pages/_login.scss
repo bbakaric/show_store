@@ -3,10 +3,18 @@
     gap: .9375rem;
     padding: 0.9375rem 1.5625rem;
 
+    @media only screen and (max-width: 829px) {
+        padding: .9375rem;
+    }
+
     &__heading {
         font-family: $base-font-family;
         font-weight: $heading-font-weight;
         font-size: $heading-font-size;
+
+        @media only screen and (max-width: 829px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__message {

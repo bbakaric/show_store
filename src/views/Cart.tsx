@@ -34,9 +34,9 @@ const Cart = () => {
              {items.totalSum.toFixed(2)} €
           </p>
           <CheckoutButton />
+          <ScrollToTopButton />
         </>
       }
-      <ScrollToTopButton />
     </div>
   )
 }
