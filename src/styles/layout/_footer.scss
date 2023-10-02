@@ -7,8 +7,19 @@
     &__box {
         @include flex-row-centerY-centerX;
 
+        @media only screen and (max-width: 600px) {
+            @include flex-row-centerY-centerX;
+        }
+
+        @media only screen and (max-width: 476px) {
+            @include flex-column-centerY;
+        }
+
         &--margin {
             margin-right: auto;
+            @media only screen and (max-width: 476px) {
+                margin: 0;
+            }
         }
 
         &--padding-top {
@@ -24,8 +35,25 @@
             gap: .3125rem;
         }
 
+        &--flex {
+            @media only screen and (max-width: 476px) {
+                @include flex-row-centerY-centerX;
+            }
+        }
+
         &--gap {
             gap: 5rem;
+
+            @media only screen and (max-width: 476px) {
+                gap: .9375rem;
+            }
+        }
+    }
+
+    &__content {
+        @media only screen and (max-width: 476px) {
+            @include flex-column-centerY;
+            text-align: center;
         }
     }
 
@@ -35,6 +63,10 @@
 
     &__logo {
         max-width: 7.5rem;
+
+        @media only screen and (max-width: 600px) {
+            max-width: 5rem;
+        }
     }
 
     &__footer-heading {

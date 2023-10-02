@@ -25,7 +25,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="footer-wrapper__box footer-wrapper__box--padding-top footer-wrapper__box--align">
+      <div className="footer-wrapper__box footer-wrapper__box--padding-top footer-wrapper__box--align footer-wrapper__box--flex">
         <p className="footer-wrapper__copyright">
           Needless &copy;
           {year}
