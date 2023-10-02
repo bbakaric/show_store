@@ -24,7 +24,7 @@ const CartItem = () => {
             <DeleteFromCart item = {item}/>
             <div className="cart-item__item-total">
                 <p key={item.id} className="cart-item__product-price">
-                    {item.price * item.cartQuantity} €
+                    {item.sumQuantity.toFixed(2)} €
                 </p>
                 <QuantityInput data = {item}/>
             </div>
