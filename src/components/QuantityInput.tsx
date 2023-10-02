@@ -37,15 +37,15 @@ const QuantityInput = ({data}: DataProp) => {
             -
         </button>
       }
-        <input type="text" id={data.id.toString()} className="quantity-input__input" value={count} onChange={() => {
-          setCount(count + 1)
-        }}/>
-        <button className="quantity-input-btn quantity-increase" onClick={() => {
-          setCount(count + 1)
-          dispatch(totalSumAdd(data.price))
-        }}>
+      <p id={data.id.toString()} className="quantity-input__input">
+        {count}
+      </p>
+      <button className="quantity-input-btn quantity-increase" onClick={() => {
+        setCount(count + 1)
+        dispatch(totalSumAdd(data.price))
+      }}>
         +
-    </button>
+      </button>
     </div>
   )
 }

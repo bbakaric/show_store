@@ -21,7 +21,7 @@ const CartItem = () => {
             <p className="cart-item__price">
                 {item.price.toFixed(2)} €
             </p>
-            <DeleteFromCart itemId = {item.id}/>
+            <DeleteFromCart item = {item}/>
             <div className="cart-item__item-total">
                 <p key={item.id} className="cart-item__product-price">
                     {item.price * item.cartQuantity} €
