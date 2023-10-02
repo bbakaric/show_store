@@ -120,3 +120,17 @@
         opacity: 0.8;
     }
 }
+
+.logout-btn {
+    color: $blue-main;
+    font-family: $base-font-family;
+    font-size: 1.25rem;
+    text-shadow: .0625rem -0.0625rem .125rem #7b7e84b3;
+    background: none;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useAppSelector } from '../hooks/hooks'
+import LogoutButton from './LogoutButton';
 
 const Navigation = () => {
     const quantityIndicator = useAppSelector(state => state.addToCart.quantityIndicator);
+    const user = useAppSelector(state => state.loginReducer);
 
     return (
         <nav className='navigation-wrapper' id="nav">
@@ -27,9 +29,19 @@ const Navigation = () => {
                 </Link>
             </div>
             <div className="navigation-wrapper__links">
-                <Link to='/login' className='navigation-wrapper__link'>
-                    Login
-                </Link>
+                {user.user.trim() == '' &&
+                    <Link to='/login' className='navigation-wrapper__link'>
+                        Login
+                    </Link>
+                }
+                {user.user.trim() != '' && 
+                <>
+                    <p className="navigation-wrapper__username">
+                        {user.user}
+                    </p>
+                    <LogoutButton />
+                </>
+                }
                 <Link to='/cart' className='navigation-wrapper__link navigation-wrapper__link--align'>
                     <img src="/cart.png" alt="cart" className="navigation-wrapper__cart-logo" />
                     <p className="navigation-wrapper__cart-count">
