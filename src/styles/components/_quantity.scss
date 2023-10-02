@@ -3,7 +3,6 @@
 
     &__input {
         background: $almost-white;
-        border: none;
         padding: 0.3125rem;
         max-width: 5rem;
         text-align: center;
@@ -11,9 +10,9 @@
         font-family: $base-font-family;
         font-size: .875rem;
         font-weight: 400;
-
-        &:focus {
-            outline: none;
+        
+        &:hover {
+            cursor: default;
         }
     }
 }

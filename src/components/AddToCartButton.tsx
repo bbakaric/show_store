@@ -24,7 +24,8 @@ const AddToCartButton = ({data}: DataProp) => {
     image: data.image,
     description: data.description,
     category: data.category,
-    cartQuantity: 1
+    cartQuantity: 1,
+    sumQuantity: data.price,
   }
   useEffect(() => {
     if (items.length > 0) {  

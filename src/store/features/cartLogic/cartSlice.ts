@@ -8,6 +8,7 @@ type Product = {
   category: string,
   image: string,
   cartQuantity: number,
+  sumQuantity: number,
 }
 
 type InitialState = {
@@ -33,7 +34,12 @@ export const cartSlice = createSlice({
       state.quantityIndicator ++;
       state.checkoutMessage = false;
     },
-    removeItem: (state, action) => { 
+    removeItem: (state, action) => {
+      state.items.forEach(item => {
+        if (item.id == action.payload) {
+          state.totalSum = state.totalSum - item.sumQuantity;
+        }
+      });
       state.items = state.items.filter((item) => item.id !== action.payload);
     },
     clearCart: (state) => {
@@ -47,11 +53,25 @@ export const cartSlice = createSlice({
     quantityIndicatorDecrease: (state) => {
       state.quantityIndicator --;
     },
-    quantitySum: (state, action) => {
+    quantityCount: (state, action) => {
       const {id, count} = action.payload;
       state.items.forEach(item => {
         if (item.id == id) {
           item.cartQuantity = count;
+        }
+      });
+    },
+    quantitySumAdd: (state, action) => {
+      state.items.forEach(item => {
+        if (item.id == action.payload) {
+          item.sumQuantity = (item.cartQuantity + 1) * item.price;
+        }
+      });
+    },
+    quantitySumSubtract: (state, action) => {
+      state.items.forEach(item => {
+        if (item.id == action.payload) {
+          item.sumQuantity = item.sumQuantity - item.price;
         }
       });
     },
@@ -67,6 +87,18 @@ export const cartSlice = createSlice({
   }
 })
 
-export const { addItem, removeItem, quantityIndicatorIncrease, quantityIndicatorDecrease, quantitySum, totalSumAdd, totalSumSubtract, clearCart, clearCartLogout } = cartSlice.actions
+export const { 
+  addItem, 
+  removeItem, 
+  quantityIndicatorIncrease, 
+  quantityIndicatorDecrease, 
+  quantityCount, 
+  totalSumAdd, 
+  totalSumSubtract, 
+  clearCart, 
+  clearCartLogout, 
+  quantitySumAdd,
+  quantitySumSubtract,
+} = cartSlice.actions
 
 export default cartSlice.reducer

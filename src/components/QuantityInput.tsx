@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useAppDispatch } from '../hooks/hooks'
-import { quantitySum, totalSumAdd, totalSumSubtract } from "../store/features/cartLogic/cartSlice"
+import { quantityCount, quantitySumAdd, quantitySumSubtract, totalSumAdd, totalSumSubtract } from "../store/features/cartLogic/cartSlice"
 
 export interface ItemIDProp {
   itemId: number
@@ -24,7 +24,7 @@ const QuantityInput = ({data}: DataProp) => {
   const id = data.id
 
   useEffect(() => {
-    dispatch(quantitySum({id, count}))
+    dispatch(quantityCount({id, count}))
   }, [count, dispatch, id])
 
   return (
@@ -33,6 +33,7 @@ const QuantityInput = ({data}: DataProp) => {
         <button className="quantity-input-btn quantity-decrease" onClick={() => {
           setCount(count - 1)
           dispatch(totalSumSubtract(data.price))
+          dispatch(quantitySumSubtract(data.id))
         }}>
             -
         </button>
@@ -43,6 +44,7 @@ const QuantityInput = ({data}: DataProp) => {
       <button className="quantity-input-btn quantity-increase" onClick={() => {
         setCount(count + 1)
         dispatch(totalSumAdd(data.price))
+        dispatch(quantitySumAdd(data.id))
       }}>
         +
       </button>
