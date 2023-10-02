@@ -1,5 +1,5 @@
-import Swiper from "../components/Swiper";
-import { Link } from "react-router-dom";
+import Swiper from "../components/Swiper"
+import { Link } from "react-router-dom"
 import { useAppSelector } from '../hooks/hooks'
 
 const HomePage = () => {

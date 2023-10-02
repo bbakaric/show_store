@@ -1,7 +1,7 @@
 import { useAppDispatch } from '../hooks/hooks'
-import { clearCartLogout } from '../store/features/cartLogic/cartSlice';
-import { logoutUser } from '../store/features/login/loginSlice';
-import { useNavigate } from 'react-router-dom';
+import { clearCartLogout } from '../store/features/cartLogic/cartSlice'
+import { logoutUser } from '../store/features/login/loginSlice'
+import { useNavigate } from 'react-router-dom'
 
 const LogoutButton = () => {
     const dispatch = useAppDispatch();

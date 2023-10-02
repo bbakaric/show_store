@@ -1,7 +1,7 @@
-import { useAppDispatch } from '../hooks/hooks';
-import { useNavigate } from 'react-router-dom';
-import { loginUser } from '../store/features/login/loginSlice';
-import SubmitButton from './SubmitButton';
+import { useAppDispatch } from '../hooks/hooks'
+import { useNavigate } from 'react-router-dom'
+import { loginUser } from '../store/features/login/loginSlice'
+import SubmitButton from './SubmitButton'
 
 const LoginForm = () => {
     const dispatch = useAppDispatch();
@@ -18,7 +18,6 @@ const LoginForm = () => {
             dispatch(loginUser(username.value.replace(/\s/g, "")));
             navigate('/');
         }
-        
     }
 
     return (

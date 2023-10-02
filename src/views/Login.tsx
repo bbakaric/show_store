@@ -4,7 +4,6 @@ import LoginForm from "../components/LoginForm"
 const Login = () => {
   const user = useAppSelector(state => state.loginReducer);
   
-  
   return (
     <div className="login-wrapper">
       <h1 className="login-wrapper__heading">

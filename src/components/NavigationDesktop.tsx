@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useAppSelector } from '../hooks/hooks'
-import LogoutButton from './LogoutButton';
+import LogoutButton from './LogoutButton'
 
 const NavigationDesktop = () => {
     const quantityIndicator = useAppSelector(state => state.addToCart.quantityIndicator);

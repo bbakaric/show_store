@@ -27,6 +27,7 @@ const AddToCartButton = ({data}: DataProp) => {
     cartQuantity: 1,
     sumQuantity: data.price,
   }
+  
   useEffect(() => {
     if (items.length > 0) {  
       if (items.filter(e => e.id === data.id).length > 0) {

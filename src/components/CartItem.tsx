@@ -1,6 +1,6 @@
 import { useAppSelector } from '../hooks/hooks'
-import DeleteFromCart from './DeleteFromCartButton';
-import QuantityInput from './QuantityInput';
+import DeleteFromCart from './DeleteFromCartButton'
+import QuantityInput from './QuantityInput'
 
 const CartItem = () => {
     const items = useAppSelector(state => state.addToCart);

@@ -1,7 +1,7 @@
 import CartItem from "../components/CartItem"
 import CheckoutButton from "../components/CheckoutButton"
-import CheckoutMessage from "../components/CheckoutMessage";
-import ScrollToTopButton from "../components/ScrollToTopButton";
+import CheckoutMessage from "../components/CheckoutMessage"
+import ScrollToTopButton from "../components/ScrollToTopButton"
 import { useAppSelector } from '../hooks/hooks'
 
 const Cart = () => {
