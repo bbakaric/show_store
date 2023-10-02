@@ -2,7 +2,7 @@
     display: flex !important;
     gap: 1.5625rem;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 829px) {
         flex-direction: column !important;
         align-items: center;
     }
@@ -13,7 +13,7 @@
         width: 15.625rem;
         height: 15.625rem;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 829px) {
             width: 9.375rem;
             height: 9.375rem;
         }
@@ -23,7 +23,7 @@
         @include flex-column-topY;
         gap: 1.5625rem;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 829px) {
             padding: .9375rem;
         }
     }
@@ -53,20 +53,20 @@
             opacity: 0.8;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 829px) {
             align-self: center;
         }
     }
 }
 
 .swiper-pagination {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 829px) {
         display: none;
     }
 }
 
 .swiper-button-prev, .swiper-button-next {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 829px) {
         display: none !important;
     }
 }

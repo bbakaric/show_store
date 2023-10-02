@@ -4,10 +4,24 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const year = new Date().getFullYear();
 
+  const toggleMenuLink = () => {
+    const hamburger = document.querySelector('.navigation-wrapper-mobile__hamburger');
+    const close = document.querySelector('.navigation-wrapper-mobile__close');
+    const menu = document.querySelector('.navigation-wrapper-mobile__bottom');
+
+    if (menu?.classList.contains('navigation-wrapper-mobile__bottom--display')) {
+        hamburger?.classList.remove('navigation-wrapper-mobile__hamburger--opacity')
+        close?.classList.remove('navigation-wrapper-mobile__close--opacity')
+        menu.classList.remove('navigation-wrapper-mobile__bottom--display')
+    } else {
+        return
+    }
+}
+
   return (
     <div className="footer-wrapper">
       <div className="footer-wrapper__box footer-wrapper__box--margin footer-wrapper__box--padding-bottom footer-wrapper__box--gap">
-        <Link to="/" className="footer-wrapper__link">
+        <Link to="/" className="footer-wrapper__link" onClick={toggleMenuLink}>
           <img src="/logo.png" alt="logo" className="footer-wrapper__logo" />
         </Link>
         <div className="footer-wrapper__content footer-wrapper__content--gap">
