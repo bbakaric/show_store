@@ -8,6 +8,11 @@
     border-radius: .3125rem;
     width: 100%;
 
+    @media only screen and (max-width: 829px) {
+        @include flex-column-centerY;
+        gap: .3125rem;
+    }
+
     &__img-wrapper {
         margin: .9375rem;
     }
@@ -24,6 +29,10 @@
         font-family: $base-font-family;
         font-size: 1rem;
         font-weight: 600;
+
+        @media only screen and (max-width: 829px) {
+            text-align: center;
+        }
     }
 
     &__product-category {

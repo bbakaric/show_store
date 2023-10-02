@@ -3,10 +3,18 @@
     gap: 1.5625rem;
     padding: 0.9375rem 1.5625rem;
 
+    @media only screen and (max-width: 829px) {
+        padding: .9375rem;
+      }
+
     &__heading {
         font-family: $base-font-family;
         font-size: $heading-font-size;
         font-weight: $heading-font-weight;
+
+        @media only screen and (max-width: 829px) {
+            font-size: 1.5rem;
+          }
     }
 
     &__message {
@@ -21,6 +29,11 @@
         font-weight: 600;
         align-self: flex-end;
         margin-right: 3.125rem;
+
+        @media only screen and (max-width: 829px) {
+            margin: 0;
+            align-self: center;
+        }
     }
 
     &__sum {
@@ -28,5 +41,9 @@
         font-size: 1.125rem;
         font-weight: 600;
         align-self: flex-end;
+
+        @media only screen and (max-width: 829px) {
+            align-self: center;
+        }
     }
 }
