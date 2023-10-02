@@ -40,12 +40,12 @@ const electronicsSlice = createSlice({
     builder.addCase(fetchElectronics.pending, state => {
       state.loading = true
     })
-    builder.addCase(fetchElectronics.fulfilled, (state, action: PayloadAction<Product[]>) => {
+    builder.addCase(fetchElectronics.fulfilled, (state: InitialState, action: PayloadAction<Product[]>) => {
       state.loading = false
       state.electronics = action.payload
       state.error = ''
     })
-    builder.addCase(fetchElectronics.rejected, (state, action) => {
+    builder.addCase(fetchElectronics.rejected, (state: InitialState, action) => {
       state.loading = false
       state.electronics = []
       state.error = action.error.message || 'Error'

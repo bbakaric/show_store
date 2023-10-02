@@ -40,12 +40,12 @@ const mensClothesSlice = createSlice({
     builder.addCase(fetchMensClothes.pending, state => {
       state.loading = true
     })
-    builder.addCase(fetchMensClothes.fulfilled, (state, action: PayloadAction<Product[]>) => {
+    builder.addCase(fetchMensClothes.fulfilled, (state: InitialState, action: PayloadAction<Product[]>) => {
       state.loading = false
       state.mensClothes = action.payload
       state.error = ''
     })
-    builder.addCase(fetchMensClothes.rejected, (state, action) => {
+    builder.addCase(fetchMensClothes.rejected, (state: InitialState, action) => {
       state.loading = false
       state.mensClothes = []
       state.error = action.error.message || 'Error'

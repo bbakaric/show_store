@@ -40,12 +40,12 @@ const sliderSlice = createSlice({
     builder.addCase(fetchLimitedProducts.pending, state => {
       state.loading = true
     })
-    builder.addCase(fetchLimitedProducts.fulfilled, (state, action: PayloadAction<Product[]>) => {
+    builder.addCase(fetchLimitedProducts.fulfilled, (state: InitialState, action: PayloadAction<Product[]>) => {
       state.loading = false
       state.products = action.payload
       state.error = ''
     })
-    builder.addCase(fetchLimitedProducts.rejected, (state, action) => {
+    builder.addCase(fetchLimitedProducts.rejected, (state: InitialState, action) => {
       state.loading = false
       state.products = []
       state.error = action.error.message || 'Error'

@@ -40,12 +40,12 @@ const jewelerySlice = createSlice({
     builder.addCase(fetchJewelery.pending, state => {
       state.loading = true
     })
-    builder.addCase(fetchJewelery.fulfilled, (state, action: PayloadAction<Product[]>) => {
+    builder.addCase(fetchJewelery.fulfilled, (state: InitialState, action: PayloadAction<Product[]>) => {
       state.loading = false
       state.jewelery = action.payload
       state.error = ''
     })
-    builder.addCase(fetchJewelery.rejected, (state, action) => {
+    builder.addCase(fetchJewelery.rejected, (state: InitialState, action) => {
       state.loading = false
       state.jewelery = []
       state.error = action.error.message || 'Error'

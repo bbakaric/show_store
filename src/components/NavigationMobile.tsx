@@ -6,23 +6,20 @@ const NavigationMobile = () => {
     const quantityIndicator = useAppSelector(state => state.addToCart.quantityIndicator);
     const user = useAppSelector(state => state.loginReducer);
 
+    const hamburger: HTMLElement = document.querySelector('.navigation-wrapper-mobile__hamburger')!;
+    const close: HTMLElement = document.querySelector('.navigation-wrapper-mobile__close')!;
+    const menu: HTMLElement = document.querySelector('.navigation-wrapper-mobile__bottom')!;
+
     const toggleMenu = () => {
-        const hamburger = document.querySelector('.navigation-wrapper-mobile__hamburger');
-        const close = document.querySelector('.navigation-wrapper-mobile__close');
-        const menu = document.querySelector('.navigation-wrapper-mobile__bottom');
-        hamburger?.classList.toggle('navigation-wrapper-mobile__hamburger--opacity');
-        close?.classList.toggle('navigation-wrapper-mobile__close--opacity');
-        menu?.classList.toggle('navigation-wrapper-mobile__bottom--display');
+        hamburger.classList.toggle('navigation-wrapper-mobile__hamburger--opacity');
+        close.classList.toggle('navigation-wrapper-mobile__close--opacity');
+        menu.classList.toggle('navigation-wrapper-mobile__bottom--display');
     }
 
     const toggleMenuLink = () => {
-        const hamburger = document.querySelector('.navigation-wrapper-mobile__hamburger');
-        const close = document.querySelector('.navigation-wrapper-mobile__close');
-        const menu = document.querySelector('.navigation-wrapper-mobile__bottom');
-
-        if (menu?.classList.contains('navigation-wrapper-mobile__bottom--display')) {
-            hamburger?.classList.remove('navigation-wrapper-mobile__hamburger--opacity')
-            close?.classList.remove('navigation-wrapper-mobile__close--opacity')
+        if (menu.classList.contains('navigation-wrapper-mobile__bottom--display')) {
+            hamburger.classList.remove('navigation-wrapper-mobile__hamburger--opacity')
+            close.classList.remove('navigation-wrapper-mobile__close--opacity')
             menu.classList.remove('navigation-wrapper-mobile__bottom--display')
         } else {
             return

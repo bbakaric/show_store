@@ -4,6 +4,7 @@ import { useAppSelector } from '../hooks/hooks'
 
 const HomePage = () => {
     const user = useAppSelector(state => state.loginReducer);
+    
     return (
         <div className="home-wrapper">
             <div className="home-wrapper__banner-wrapper">

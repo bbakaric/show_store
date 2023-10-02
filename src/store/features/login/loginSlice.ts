@@ -4,6 +4,11 @@ type InitialState = {
   user: string,
 }
 
+type UserPayload = {
+  type: string,
+  payload: string,
+}
+
 const initialState: InitialState = {
   user: ''
 }
@@ -12,10 +17,10 @@ export const loginSlice = createSlice({
   name: 'login',
   initialState,
   reducers: {
-    loginUser: (state, action) => {
+    loginUser: (state: InitialState, action: UserPayload) => {
       state.user = action.payload
     },
-    logoutUser: (state) => {
+    logoutUser: (state: InitialState) => {
       state.user = ''
     }
   }

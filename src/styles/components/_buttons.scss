@@ -144,6 +144,7 @@
 }
 
 .scrollToTop-btn {
+    display: none;
     color: $blue-main;
     font-family: $base-font-family;
     font-size: .875rem;
@@ -155,4 +156,8 @@
     background: $almost-white;
     border: none;
     border-radius: .625rem;
+
+    @media only screen and (max-width: 829px) {
+        display: block;
+    }
 }

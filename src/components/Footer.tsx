@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom"
 
 const Footer = () => {
-  const year = new Date().getFullYear();
+  const year: number = new Date().getFullYear();
 
   const toggleMenuLink = () => {
-    const hamburger = document.querySelector('.navigation-wrapper-mobile__hamburger');
-    const close = document.querySelector('.navigation-wrapper-mobile__close');
-    const menu = document.querySelector('.navigation-wrapper-mobile__bottom');
+    const hamburger: HTMLElement = document.querySelector('.navigation-wrapper-mobile__hamburger')!;
+    const close: HTMLElement = document.querySelector('.navigation-wrapper-mobile__close')!;
+    const menu: HTMLElement = document.querySelector('.navigation-wrapper-mobile__bottom')!;
 
-    if (menu?.classList.contains('navigation-wrapper-mobile__bottom--display')) {
-        hamburger?.classList.remove('navigation-wrapper-mobile__hamburger--opacity')
-        close?.classList.remove('navigation-wrapper-mobile__close--opacity')
+    if (menu.classList.contains('navigation-wrapper-mobile__bottom--display')) {
+        hamburger.classList.remove('navigation-wrapper-mobile__hamburger--opacity')
+        close.classList.remove('navigation-wrapper-mobile__close--opacity')
         menu.classList.remove('navigation-wrapper-mobile__bottom--display')
     } else {
         return
