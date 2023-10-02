@@ -36,9 +36,6 @@ const Navigation = () => {
                 }
                 {user.user.trim() != '' && 
                 <>
-                    <p className="navigation-wrapper__username">
-                        {user.user}
-                    </p>
                     <LogoutButton />
                 </>
                 }

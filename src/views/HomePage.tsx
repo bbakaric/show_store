@@ -1,12 +1,20 @@
 import Swiper from "../components/Swiper";
 import { Link } from "react-router-dom";
+import { useAppSelector } from '../hooks/hooks'
 
 const HomePage = () => {
+    const user = useAppSelector(state => state.loginReducer);
     return (
         <div className="home-wrapper">
             <div className="home-wrapper__banner-wrapper">
-                <img src="/banner-2.jpg" alt="banner" className="home-wrapper__banner-img" />
+                <img src="/banner-2.jpg" alt="banner" className="home-wrapper__banner-img home-wrapper__banner-img--desktop" />
+                <img src="/banner.jpg" alt="banner" className="home-wrapper__banner-img home-wrapper__banner-img--mobile" />
             </div>
+            {user.user.trim() != '' &&
+                <h3 className="home-wrapper__user-welcome">
+                    Welcome {user.user}
+                </h3>
+            }
             <h3 className="home-wrapper__sub-heading">
                 New Products
             </h3>

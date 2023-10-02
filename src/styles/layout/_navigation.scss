@@ -10,6 +10,10 @@
         font-size: 1.25rem;
         text-shadow: .0625rem -0.0625rem .125rem #7b7e84b3;
 
+        @media only screen and (max-width: 1100px) {
+           font-size: 1rem;
+        }
+
         &:hover {
             opacity: 0.8;
         }
@@ -47,6 +51,10 @@
     &__links {
         @include flex-row-centerY-centerX;
         gap: 3.125rem;
+
+        @media only screen and (max-width: 1100px) {
+            gap: 1.5625rem;
+        }
     }
 
     &__cart-logo {

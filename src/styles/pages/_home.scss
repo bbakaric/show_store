@@ -3,6 +3,20 @@
         display: block;
         object-fit: contain;
         max-width: 100%;
+
+        &--desktop {
+            @media only screen and (max-width: 600px) {
+                display: none;
+             }
+        }
+
+        &--mobile {
+            display: none;
+
+            @media only screen and (max-width: 600px) {
+                display: block;
+             }
+        }
     }
 
     &__sub-heading {
@@ -13,10 +27,21 @@
         padding: 1.5625rem;
     }
 
+    &__user-welcome {
+        font-family: $base-font-family;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0 1.5625rem;
+    }
+
     &__popular-wrapper {
         @include flex-column-centerY;
         gap: 1.5625rem;
         padding: 1.5625rem;
+
+        @media only screen and (max-width: 600px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__popular-heading {
@@ -29,6 +54,10 @@
     &__categories-box {
         @include flex-row-centerY-centerX;
         gap: 5rem;
+
+        @media only screen and (max-width: 600px) {
+            gap: 2.1875rem;
+        }
     }
 
     &__category-link {

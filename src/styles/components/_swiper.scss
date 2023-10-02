@@ -2,16 +2,30 @@
     display: flex !important;
     gap: 1.5625rem;
 
+    @media only screen and (max-width: 600px) {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
     &__product-img {
         display: block;
         object-fit: contain;
         width: 15.625rem;
         height: 15.625rem;
+
+        @media only screen and (max-width: 600px) {
+            width: 9.375rem;
+            height: 9.375rem;
+        }
     }
 
     &__info-wrapper {
         @include flex-column-topY;
         gap: 1.5625rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: .9375rem;
+        }
     }
 
     &__product-name {
@@ -38,5 +52,21 @@
         &:hover {
             opacity: 0.8;
         }
+
+        @media only screen and (max-width: 600px) {
+            align-self: center;
+        }
+    }
+}
+
+.swiper-pagination {
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.swiper-button-prev, .swiper-button-next {
+    @media only screen and (max-width: 600px) {
+        display: none !important;
     }
 }
