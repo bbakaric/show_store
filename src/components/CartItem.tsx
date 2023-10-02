@@ -1,4 +1,5 @@
 import { useAppSelector } from '../hooks/hooks'
+import { Link } from 'react-router-dom'
 import DeleteFromCart from './DeleteFromCartButton'
 import QuantityInput from './QuantityInput'
 
@@ -12,12 +13,16 @@ const CartItem = () => {
             <div className="cart-item__img-wrapper">
                 <img src={item.image} alt="Image" className="cart-item__img" />
             </div>
-            <p className="cart-item__product-title">
-                {item.title}
-            </p>
-            <p className="cart-item__product-category">
-                {item.category}
-            </p>
+            <Link to={`/product/${item.id}`}>
+                <p className="cart-item__product-title">
+                    {item.title}
+                </p>
+            </Link>
+            <Link to={`/${item.category}`}>
+                <p className="cart-item__product-category">
+                    {item.category}
+                </p>
+            </Link>
             <p className="cart-item__price">
                 {item.price.toFixed(2)} €
             </p>
