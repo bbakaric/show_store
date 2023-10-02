@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useAppSelector, useAppDispatch } from '../hooks/hooks'
 import { fetchWomenClothing } from '../store/features/womenProducts/womenProductsSlice'
 import ProductCard from '../components/ProductCard'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 const Womens = () => {
   const womenClothing = useAppSelector(state => state.womensClothes )
@@ -18,6 +19,7 @@ const Womens = () => {
     <div className="products-wrapper__products-cards-wrapper">
       <ProductCard products={womenClothing.womenClothes}/>
     </div>
+    <ScrollToTopButton />
   </div>
   )
 }

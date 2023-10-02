@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useAppSelector, useAppDispatch } from '../hooks/hooks'
 import { fetchAllProducts } from '../store/features/allProducts/allProductsSlice'
 import ProductCard from '../components/ProductCard'
+import ScrollToTopButton from '../components/ScrollToTopButton'
 
 export const AllProducts = () => {
   const product = useAppSelector(state => state.product);
@@ -19,6 +20,7 @@ export const AllProducts = () => {
       <div className="products-wrapper__products-cards-wrapper">
         <ProductCard products={product.products}/>
       </div>
+      <ScrollToTopButton />
     </div>
   )
 }

@@ -3,11 +3,19 @@
     gap: 1.5625rem;
     padding: 0.9375rem 1.5625rem;
 
+    @media only screen and (max-width: 1300px) {
+        padding: .9375rem;
+      }
+
     &__heading {
         font-family: $base-font-family;
         font-size: 2.25rem;
         font-weight: 600;
         align-self: flex-start;
+
+        @media only screen and (max-width: 1300px) {
+            font-size: 1.5rem;
+          }
     }
 
     &__products-cards-wrapper {
@@ -16,5 +24,9 @@
         align-items: stretch;
         flex-wrap: wrap;
         gap: 1.25rem;
+
+        @media only screen and (max-width: 1300px) {
+            justify-content: center;
+          }
     }
 }

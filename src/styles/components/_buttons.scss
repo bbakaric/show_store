@@ -138,3 +138,17 @@
         font-size: 1rem;
      }
 }
+
+.scrollToTop-btn {
+    color: $blue-main;
+    font-family: $base-font-family;
+    font-size: .875rem;
+    text-transform: uppercase;
+    position: sticky;
+    bottom: 1%;
+    margin-left: auto;
+    padding: .3125rem;
+    background: $almost-white;
+    border: none;
+    border-radius: .625rem;
+}
