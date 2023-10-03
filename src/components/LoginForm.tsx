@@ -25,7 +25,7 @@ const LoginForm = () => {
             <label htmlFor="username" className="login-wrapper__label">
                 Username:
             </label>
-            <input type="text" name="username" id="username" maxLength={25} placeholder='max 25 characters' className="login-wrapper__username" />
+            <input type="text" name="username" id="username" maxLength={25} placeholder='max 25 characters' className="login-wrapper__username" autoComplete='on'/>
             <SubmitButton />
         </form>
     )
