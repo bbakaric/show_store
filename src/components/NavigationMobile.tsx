@@ -6,11 +6,14 @@ const NavigationMobile = () => {
     const quantityIndicator = useAppSelector(state => state.addToCart.quantityIndicator);
     const user = useAppSelector(state => state.loginReducer);
 
+    const menu: HTMLElement = document.querySelector('.navigation-wrapper-mobile__bottom')!;
     const hamburger: HTMLElement = document.querySelector('.navigation-wrapper-mobile__hamburger')!;
     const close: HTMLElement = document.querySelector('.navigation-wrapper-mobile__close')!;
-    const menu: HTMLElement = document.querySelector('.navigation-wrapper-mobile__bottom')!;
 
     const toggleMenu = () => {
+        const menu: HTMLElement = document.querySelector('.navigation-wrapper-mobile__bottom')!;
+        const hamburger: HTMLElement = document.querySelector('.navigation-wrapper-mobile__hamburger')!;
+        const close: HTMLElement = document.querySelector('.navigation-wrapper-mobile__close')!;
         hamburger.classList.toggle('navigation-wrapper-mobile__hamburger--opacity');
         close.classList.toggle('navigation-wrapper-mobile__close--opacity');
         menu.classList.toggle('navigation-wrapper-mobile__bottom--display');
