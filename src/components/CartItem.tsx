@@ -18,11 +18,9 @@ const CartItem = () => {
                     {item.title}
                 </p>
             </Link>
-            <Link to={`/${item.category}`}>
-                <p className="cart-item__product-category">
-                    {item.category}
-                </p>
-            </Link>
+            <p className="cart-item__product-category">
+                {item.category}
+            </p>
             <p className="cart-item__price">
                 {item.price.toFixed(2)} €
             </p>

@@ -23,16 +23,13 @@ const ProductPage = () => {
         </div>
         <div className="pdp-wrapper__info-box">
           <h4 className="pdp-wrapper__product-title">
-            {title}
+              {title}
           </h4>
           <p className="pdp-wrapper__product-rating">
             Rating: {rating.rate}
           </p>
           <p className="pdp-wrapper__product-category">
-            Category:
-            <Link to={`/${category}`} className='pdp-wrapper__category-link'>
-              {category}
-            </Link>
+            Category: {category}
           </p>
           <p className="pdp-wrapper__product-price">
             Price: {price} €
