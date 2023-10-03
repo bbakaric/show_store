@@ -20,7 +20,7 @@
     }
 
     &__info-wrapper {
-        @include flex-column-topY;
+        @include flex-column-leftX;
         gap: 1.5625rem;
 
         @media only screen and (max-width: 829px) {

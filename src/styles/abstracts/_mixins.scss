@@ -63,19 +63,19 @@
 
 /*----- FLEX DIRECTION COLUMN -----*/
 
-@mixin flex-column-topY{
+@mixin flex-column-leftX{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-@mixin flex-column-centerY {
+@mixin flex-column-centerX {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@mixin flex-column-bottomY {
+@mixin flex-column-rightX {
     display: flex;
     flex-direction: column;
     align-items: flex-end;

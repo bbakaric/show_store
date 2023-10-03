@@ -1,5 +1,5 @@
 .footer-wrapper {
-    @include flex-column-centerY;
+    @include flex-column-centerX;
     padding: 0.9375rem 1.5625rem;
     background: $almost-white;
     margin-top: auto;
@@ -12,7 +12,7 @@
         }
 
         @media only screen and (max-width: 476px) {
-            @include flex-column-centerY;
+            @include flex-column-centerX;
         }
 
         &--margin {
@@ -52,7 +52,7 @@
 
     &__content {
         @media only screen and (max-width: 476px) {
-            @include flex-column-centerY;
+            @include flex-column-centerX;
             text-align: center;
         }
     }

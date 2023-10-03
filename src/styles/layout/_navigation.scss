@@ -94,7 +94,7 @@
     padding: .9375rem;
 
     @media only screen and (max-width: 829px) {
-        @include flex-column-topY;
+        @include flex-column-leftX;
     }
 
     &__top {
@@ -180,14 +180,14 @@
         display: none;
 
         &--display {
-            @include flex-column-topY;
+            @include flex-column-leftX;
             gap: .625rem;
             padding: .9375rem;
         }
     }
 
     &__links {
-        @include flex-column-topY;
+        @include flex-column-leftX;
         gap: .625rem;
     }
 }

@@ -1,11 +1,11 @@
 .products-wrapper__product-link {
-    @include flex-column-centerY;
+    @include flex-column-centerX;
     gap: .625rem;
     max-width: fit-content;
 }
 
 .product-card {
-    @include flex-column-centerY;
+    @include flex-column-centerX;
     gap: .625rem;
     max-width: 12.5rem;
     padding: .9375rem;

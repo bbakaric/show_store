@@ -35,7 +35,7 @@
     }
 
     &__popular-wrapper {
-        @include flex-column-centerY;
+        @include flex-column-centerX;
         gap: 1.5625rem;
         padding: 1.5625rem;
 
@@ -69,7 +69,7 @@
     }
 
     &__category {
-        @include flex-column-centerY;
+        @include flex-column-centerX;
         gap: .625rem;
         transition: scale 500ms;
     }
